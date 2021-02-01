@@ -14,9 +14,9 @@ pipeline {
             label 'ec2-node8'
         }
     }
-    // triggers {
-    //     cron('H H(4-5) * * *')
-    // }
+    triggers {
+        cron('H H(4-5) * * *')
+    }
     stages {
         stage('Setup tests') {
             steps {
