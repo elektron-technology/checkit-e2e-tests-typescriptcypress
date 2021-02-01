@@ -1,0 +1,9 @@
+{
+    "URL": "/",
+    "SEARCH_FIELD": "#search-key",
+    "USER_NAME":"#username",
+    "PASSWORD": "#password",
+    "SEARCH_BUTTON": ".search-button",
+    "LOGIN_BUTTON":"#kc-login",
+    "CONTROL_CENTRE_HOMEPAGE": "[title='Home screen']"
+}
