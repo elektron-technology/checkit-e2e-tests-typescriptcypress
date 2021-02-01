@@ -32,8 +32,8 @@ fs.readFile(metadataFile, "utf-8", (error, metadata) => {
     reporter.generate(options);
 
     // Deletes all the json files inside the reports directory
-    fs.readdirSync(reportsPath)
-      .filter(file => /[.]json$/.test(file))
-      .map(file => fs.unlinkSync(`${reportsPath}/${file}`));
+    // fs.readdirSync(reportsPath)
+    //   .filter(file => /[.]json$/.test(file))
+    //   .map(file => fs.unlinkSync(`${reportsPath}/${file}`));
   }
 });

@@ -86,6 +86,8 @@ pipeline {
             sh 'echo \"*** Mock server logs ***\"'
             sh 'docker logs local-mock-server'
             sh 'echo \"************************\"'
+            echo 'Generating Cucumber reports'
+            cucumber fileIncludePattern: '**/*.json', jsonReportDirectory: './cypress/reports/metadata.json', sortingMethod: 'ALPHABETICAL'
             //sh 'docker stop local-mock-server || true && docker rm local-mock-server || true'
             //sh 'docker stop local-am-maintenance-app || true && docker rm local-am-maintenance-app || true'
             junit 'results/cypress-report.xml'
