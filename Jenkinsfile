@@ -15,7 +15,7 @@ pipeline {
         }
     }
     triggers {
-        //cron('H H(4-5) * * *')
+        cron('H H(4-5) * * *')
     }
     stages {
         stage('Setup tests') {
