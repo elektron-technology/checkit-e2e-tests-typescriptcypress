@@ -84,7 +84,7 @@ pipeline {
         }
         always {
             sh 'echo \"*** Mock server logs ***\"'
-            sh 'docker logs local-mock-server'
+            //sh 'docker logs local-mock-server'
             sh 'echo \"************************\"'
             echo 'Generating Cucumber reports'
             cucumber fileIncludePattern: '**/*.json', jsonReportDirectory: './cypress/reports/metadata.json', sortingMethod: 'ALPHABETICAL'
