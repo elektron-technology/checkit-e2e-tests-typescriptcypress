@@ -90,7 +90,7 @@ pipeline {
             cucumber fileIncludePattern: '**/*.cucumber.json', jsonReportDirectory: 'cypress/reports', sortingMethod: 'ALPHABETICAL'
             //sh 'docker stop local-mock-server || true && docker rm local-mock-server || true'
             //sh 'docker stop local-am-maintenance-app || true && docker rm local-am-maintenance-app || true'
-            junit 'results/cypress-report.xml'
+            //junit 'results/cypress-report.xml'
         }
     }
 }

@@ -1,5 +1,9 @@
 Feature:  Verify document management 
 
     
-    Scenario: Navigate to document management via control centre
+    Background: User navigates to DocumentManagement App
     Given I am on documentManagment application
+
+    Scenario:  Upload document to document management app positivie scenario
+        When I click on the UPLOAD document link
+        Then I fill in the upload document form with DocumentName as "Test123" and Description as "TestDesc"
